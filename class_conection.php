@@ -1,23 +1,22 @@
-<?php
-    class conection
-    {
-        private $server;
-        private $user;
-        private $database;
-        private $con;
-        function __construct($data)
-        {
-            $this->server = "localhost";
-            $this->user = "root";
-            $this->pass = "";
-            $this->database = "datostiendas";
-            $this->con = mysqli_connect($this->server,$this->user,$this->pass,$this->database);
-            if(!$this->con){
-                die("Conexion fallida: ". mysqli_connect_error() );
-            }
-            
-        }
+<?php 
+	// Parametros a configurar para la conexion de la base de datos 
+	$host = "localhost";    // sera el valor de nuestra BD 
+	$basededatos = "datostienda";    // sera el valor de nuestra BD 
+	$usuariodb = "root";    // sera el valor de nuestra BD 
+	$clavedb = "";    // sera el valor de nuestra BD 
 
-    }
-    $db = new conection ("Ejemplo");
+	//Lista de Tablas
+	$tabla_db1 = "propietario"; 	   // tabla de usuarios
+	
+
+	//error_reporting(0); //No me muestra errores
+	
+	$conexion = new mysqli($host,$usuariodb,$clavedb,$basededatos);
+
+
+	if ($conexion->connect_errno) {
+	    echo "Nuestro sitio experimenta fallos....";
+	    exit();
+	}
+
 ?>
