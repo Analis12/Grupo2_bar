@@ -10,7 +10,7 @@
             $this->server = "localhost";
             $this->user = "root";
             $this->pass = "";
-            $this->database = "datostiendas";
+            $this->database = "dastostiendas";
             $this->con = mysqli_connect($this->server,$this->user,$this->pass,$this->database);
             if(!$this->con){
                 die("Conexion fallida: ". mysqli_connect_error() );
