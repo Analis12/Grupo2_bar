@@ -1,23 +1,13 @@
 <?php
-    class conection
-    {
-        private $server;
-        private $user;
-        private $database;
-        private $con;
-        function __construct($data)
-        {
-            $this->server = "localhost";
-            $this->user = "root";
-            $this->pass = "";
-            $this->database = "datostiendas";
-            $this->con = mysqli_connect($this->server,$this->user,$this->pass,$this->database);
-            if(!$this->con){
-                die("Conexion fallida: ". mysqli_connect_error() );
-            }
-            
-        }
+     $server = "localhost";
+     $user = "root";
+     $pass = "";
+     $database = "datostiendas";
 
-    }
-    $db = new conection ("Ejemplo");
+     $conexion = new mysqli($server,$user,$pass,$database);
+     if($conexion->connect_errno)
+     {
+        echo "No hay conexion...";
+        exit();
+     }
 ?>
