@@ -1,3 +1,99 @@
-.titulo{
-    background: blue;
+body {
+    background-image: url("../imagenes/principal2.jpg" );
+    margin: 0;background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+  }
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+img{
+    width: 1550px;
+    height:730px;
+    margin:0% ;
+}
+
+.centrado{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row{
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3{
+    font-size: 40px;
+}
+button{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    right: -20%;
+    box-shadow: 0 8px 16px 0 rgba(105, 102, 102, 0.2), 0 6px 20px 0 rgba(224, 222, 222, 0.19);
+    height: 40px;
+    border-radius: 2px;
+}
+ 
+  
+button:hover {background-color: #e7e7e7;
+border-radius: 2px; }
+
+.consulta1{
+    right: 50%;
+}
+.consulta2{
+    right: 20%;
+}
+
+.Completo{
+    top:50%;
+    left: 50%;
+    background-color: #bc6c25;
+    position:absolute ;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulo_login{
+    height: 20%;
+    margin-top: 0;
+}
+.container_login{
+    padding-top: 10px;
+    height: 80%;
+    background-color: #fefae0;
+    
+}
+.icono{
+    width: 25px;
+    height: 25px;
+}
+.input{
+    height: 25px;
+}
+.button{
+    padding: 10px;
+    background-color: #606c38;
+    border-color: #606c38;
+    border-radius: 5px;
+    color:#fefae0 ;
+}
+h2{
+    color: #fefae0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
 }
