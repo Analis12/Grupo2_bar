@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/estilos.css">
 <?php
 
     include_once 'includes/user.php';
@@ -21,15 +22,16 @@
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        include_once 'vistas/paginaprincipal.php';
+        include_once '/vistas/paginaprincipal.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
         $errorLogin = "Nombre de usuario y/o password es incorrecto";
-        include_once 'vistas/login.php';
+        include_once '/vistas/login.php';
+        echo ("error");
     }
 
 }else{
     echo "Login";
-    include_once 'vistas/login.php';
+    include_once '/vistas/login.php';
 }
 ?>

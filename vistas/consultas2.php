@@ -22,7 +22,7 @@
       <center>
         <h1>BAR</h1>
       </center>
-      <form method="POST" action="index.php">
+      <form method="POST" action="#">
         <div class="form-group">
           <label for="nombre">Id del Bar</label>
           <input type="text" name="bar_id" class="form-control" id="bar_id">
@@ -69,8 +69,13 @@
           <input type="submit" value="Consultar" class="btn btn-info" name="btn3">
         </center>
       </form>
+
+    </div>
+    <div>
+      <a class="regresar" href="../">Regresar</a>
     </div>
     <div class="col-md-4"></div>
+
   </div>
 
   <?php

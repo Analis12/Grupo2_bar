@@ -1,19 +1,15 @@
 body {
     background-image: url("../imagenes/principal2.jpg" );
-    margin: 0;background-size: cover;
+    background-size: cover;
     background-repeat:no-repeat;
     background-position: center center;
   }
 
 .contenedor{
-    position: relative;
+    width: 80%;
+    height: 80%;
     display: inline-block;
     text-align: center;
-}
-img{
-    width: 1550px;
-    height:730px;
-    margin:0% ;
 }
 
 .centrado{
@@ -50,11 +46,13 @@ button{
 button:hover {background-color: #e7e7e7;
 border-radius: 2px; }
 
-.consulta1{
-    right: 50%;
-}
-.consulta2{
-    right: 20%;
+.consulta1, .consulta2{
+    margin: 20px;
+    background: #bc6c25;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .Completo{
@@ -96,4 +94,45 @@ border-radius: 2px; }
 h2{
     color: #fefae0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.row2{
+    margin: auto;
+    text-align: center;
+    color: black;
+    background-color: #fefae0;
+    font-size: 25;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.titulo{
+    padding: 10px;
+    background-color: #bc6c25;
+}
+.row2 td{
+    padding: 10px;
+}
+
+.regresar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    margin: 12px;
+    border-radius: 5px;
+    background-color: #bc6c25;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.cerrar{
+    position: relative;
+    top: 100px;
+    left: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #cd2626;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
 }

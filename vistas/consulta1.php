@@ -17,7 +17,7 @@
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-    <form method="POST" action="index.php" >
+    <form method="POST" action="#" >
         <!-- MENU -->
         <center><h1>MENU</h1></center>
         <div class="form-group">
@@ -49,7 +49,11 @@
         </center>
 
     </form>
+   
 
+    </div>
+    <div>
+      <a class="regresar" href="../">Regresar</a>
     </div>
   </div>
   <div class="col-md-4"></div>
@@ -71,8 +75,8 @@ if(isset($_POST['btn4']))
            {
              echo 
              "
-               <table width=\"100%\" border=\"1\">
-                 <tr>
+               <table class='row2' width=\"70%\" border=\"1\">
+                 <tr class='titulo'>
                    <td><b><center>Id Bar</center></b></td>
                    <td><b><center>Id Menú</center></b></td>
                    <td><b><center>Nombre</center></b></td>
@@ -110,8 +114,8 @@ if(isset($_POST['btn5']))
            {
              echo 
              "
-               <table width=\"100%\" border=\"1\">
-                 <tr>
+             <table class='row2' width=\"70%\" border=\"1\">
+             <tr class='titulo'>
                    <td><b><center>Id Menú</center></b></td>
                    <td><b><center>Id Preferencias</center></b></td>
                    <td><b><center>Fecha</center></b></td>
@@ -145,8 +149,8 @@ if(isset($_POST['btn6']))
            {
              echo 
              "
-               <table width=\"100%\" border=\"1\">
-                 <tr>
+             <table class='row2' width=\"70%\" border=\"1\">
+             <tr class='titulo'>
                    <td><b><center>Id Bar</center></b></td>
                    <td><b><center>Id Snack</center></b></td>
                    <td><b><center>Nombre</center></b></td>
