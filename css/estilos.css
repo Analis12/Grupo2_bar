@@ -126,12 +126,13 @@ h2{
 }
 
 .cerrar{
-    position: relative;
-    top: 100px;
-    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 10px;
+    margin: 12px;
     border-radius: 5px;
-    background-color: #cd2626;
+    background-color: #d1351d;
     text-decoration: none;
     font-size: 20px;
     color: black;
