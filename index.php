@@ -10,7 +10,7 @@
     if(isset($_SESSION['user'])){
         //echo "Hay sesión";
     $user->setUser($userSession->getCurrentUser());
-    include_once 'vistas/paginaprincipal.php';
+    include_once 'vistas/consulta1.php';
 }else if(isset($_POST['username']) && isset($_POST['password'])){
     //echo "Validación de login";
 
@@ -22,16 +22,16 @@
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        include_once '/vistas/consulta1.php';
+        include_once 'vistas/consulta1.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
         $errorLogin = "Nombre de usuario y/o password es incorrecto";
-        include_once '/vistas/login.php';
+        include_once 'vistas/login.php';
         echo ("error");
     }
 
 }else{
     echo "Login";
-    include_once '/vistas/login.php';
+    include_once 'vistas/login.php';
 }
 ?>

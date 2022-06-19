@@ -1,5 +1,5 @@
 <?php
- require "../includes/class_conection.php"
+ require "includes/class_conection.php"
 ?><html>
 <head>
   <title>Consulta 1 </title>
