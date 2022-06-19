@@ -22,7 +22,7 @@
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        include_once '/vistas/paginaprincipal.php';
+        include_once '/vistas/consulta1.php';
     }else{
         //echo "nombre de usuario y/o password incorrecto";
         $errorLogin = "Nombre de usuario y/o password es incorrecto";

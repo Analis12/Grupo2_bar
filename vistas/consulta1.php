@@ -286,7 +286,7 @@ if(isset($_POST['btn5']))
 ?>
     </div>
     <div>
-      <a class="regresar" href="../">Regresar</a>
+      <a class="regresar" href="#">Regresar</a>
     </div>
     <div>
     <a class="cerrar" href="includes/logout.php">Cerrar sesión</a>
